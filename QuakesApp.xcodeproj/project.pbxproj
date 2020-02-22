@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D4E04AB24017B42009FF353 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E04AA24017B42009FF353 /* NetworkingManager.swift */; };
+		7D4E04AE24017BE6009FF353 /* Quakes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E04AD24017BE6009FF353 /* Quakes.swift */; };
+		7D4E04B224017F3D009FF353 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E04B124017F3D009FF353 /* ListRow.swift */; };
+		7D566E4B240179E100BDD8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D566E4A240179E100BDD8C5 /* AppDelegate.swift */; };
+		7D566E4D240179E100BDD8C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D566E4C240179E100BDD8C5 /* SceneDelegate.swift */; };
+		7D566E50240179E100BDD8C5 /* QuakesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D566E4E240179E100BDD8C5 /* QuakesApp.xcdatamodeld */; };
+		7D566E52240179E100BDD8C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D566E51240179E100BDD8C5 /* ContentView.swift */; };
+		7D566E54240179E200BDD8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D566E53240179E200BDD8C5 /* Assets.xcassets */; };
+		7D566E57240179E200BDD8C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D566E56240179E200BDD8C5 /* Preview Assets.xcassets */; };
+		7D566E5A240179E200BDD8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D566E58240179E200BDD8C5 /* LaunchScreen.storyboard */; };
+		7D566E65240179E200BDD8C5 /* QuakesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D566E64240179E200BDD8C5 /* QuakesAppTests.swift */; };
+		7D566E70240179E200BDD8C5 /* QuakesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D566E6F240179E200BDD8C5 /* QuakesAppUITests.swift */; };
+		7D85FB19240189E500DA1B28 /* QuakeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D85FB18240189E500DA1B28 /* QuakeDetails.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D566E61240179E200BDD8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D566E3F240179E100BDD8C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D566E46240179E100BDD8C5;
+			remoteInfo = QuakesApp;
+		};
+		7D566E6C240179E200BDD8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D566E3F240179E100BDD8C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D566E46240179E100BDD8C5;
+			remoteInfo = QuakesApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D4E04AA24017B42009FF353 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		7D4E04AD24017BE6009FF353 /* Quakes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quakes.swift; sourceTree = "<group>"; };
+		7D4E04B124017F3D009FF353 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		7D566E47240179E100BDD8C5 /* QuakesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuakesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D566E4A240179E100BDD8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D566E4C240179E100BDD8C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7D566E4F240179E100BDD8C5 /* QuakesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuakesApp.xcdatamodel; sourceTree = "<group>"; };
+		7D566E51240179E100BDD8C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D566E53240179E200BDD8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D566E56240179E200BDD8C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D566E59240179E200BDD8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D566E5B240179E200BDD8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D566E60240179E200BDD8C5 /* QuakesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuakesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D566E64240179E200BDD8C5 /* QuakesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesAppTests.swift; sourceTree = "<group>"; };
+		7D566E66240179E200BDD8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D566E6B240179E200BDD8C5 /* QuakesAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuakesAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D566E6F240179E200BDD8C5 /* QuakesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesAppUITests.swift; sourceTree = "<group>"; };
+		7D566E71240179E200BDD8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D85FB18240189E500DA1B28 /* QuakeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetails.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D566E44240179E100BDD8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D566E5D240179E200BDD8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D566E68240179E200BDD8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D4E04AF24017EF9009FF353 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D4E04B124017F3D009FF353 /* ListRow.swift */,
+				7D85FB18240189E500DA1B28 /* QuakeDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D4E04B024017EFF009FF353 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D4E04AD24017BE6009FF353 /* Quakes.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		7D566E3E240179E100BDD8C5 = {
+			isa = PBXGroup;
+			children = (
+				7D566E49240179E100BDD8C5 /* QuakesApp */,
+				7D566E63240179E200BDD8C5 /* QuakesAppTests */,
+				7D566E6E240179E200BDD8C5 /* QuakesAppUITests */,
+				7D566E48240179E100BDD8C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D566E48240179E100BDD8C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D566E47240179E100BDD8C5 /* QuakesApp.app */,
+				7D566E60240179E200BDD8C5 /* QuakesAppTests.xctest */,
+				7D566E6B240179E200BDD8C5 /* QuakesAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D566E49240179E100BDD8C5 /* QuakesApp */ = {
+			isa = PBXGroup;
+			children = (
+				7D4E04B024017EFF009FF353 /* Data Models */,
+				7D4E04AF24017EF9009FF353 /* Views */,
+				7D566E4A240179E100BDD8C5 /* AppDelegate.swift */,
+				7D566E4C240179E100BDD8C5 /* SceneDelegate.swift */,
+				7D566E51240179E100BDD8C5 /* ContentView.swift */,
+				7D566E53240179E200BDD8C5 /* Assets.xcassets */,
+				7D566E58240179E200BDD8C5 /* LaunchScreen.storyboard */,
+				7D566E5B240179E200BDD8C5 /* Info.plist */,
+				7D566E4E240179E100BDD8C5 /* QuakesApp.xcdatamodeld */,
+				7D566E55240179E200BDD8C5 /* Preview Content */,
+				7D4E04AA24017B42009FF353 /* NetworkingManager.swift */,
+			);
+			path = QuakesApp;
+			sourceTree = "<group>";
+		};
+		7D566E55240179E200BDD8C5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7D566E56240179E200BDD8C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D566E63240179E200BDD8C5 /* QuakesAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D566E64240179E200BDD8C5 /* QuakesAppTests.swift */,
+				7D566E66240179E200BDD8C5 /* Info.plist */,
+			);
+			path = QuakesAppTests;
+			sourceTree = "<group>";
+		};
+		7D566E6E240179E200BDD8C5 /* QuakesAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D566E6F240179E200BDD8C5 /* QuakesAppUITests.swift */,
+				7D566E71240179E200BDD8C5 /* Info.plist */,
+			);
+			path = QuakesAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D566E46240179E100BDD8C5 /* QuakesApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D566E74240179E200BDD8C5 /* Build configuration list for PBXNativeTarget "QuakesApp" */;
+			buildPhases = (
+				7D566E43240179E100BDD8C5 /* Sources */,
+				7D566E44240179E100BDD8C5 /* Frameworks */,
+				7D566E45240179E100BDD8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuakesApp;
+			productName = QuakesApp;
+			productReference = 7D566E47240179E100BDD8C5 /* QuakesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D566E5F240179E200BDD8C5 /* QuakesAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D566E77240179E200BDD8C5 /* Build configuration list for PBXNativeTarget "QuakesAppTests" */;
+			buildPhases = (
+				7D566E5C240179E200BDD8C5 /* Sources */,
+				7D566E5D240179E200BDD8C5 /* Frameworks */,
+				7D566E5E240179E200BDD8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D566E62240179E200BDD8C5 /* PBXTargetDependency */,
+			);
+			name = QuakesAppTests;
+			productName = QuakesAppTests;
+			productReference = 7D566E60240179E200BDD8C5 /* QuakesAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D566E6A240179E200BDD8C5 /* QuakesAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D566E7A240179E200BDD8C5 /* Build configuration list for PBXNativeTarget "QuakesAppUITests" */;
+			buildPhases = (
+				7D566E67240179E200BDD8C5 /* Sources */,
+				7D566E68240179E200BDD8C5 /* Frameworks */,
+				7D566E69240179E200BDD8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D566E6D240179E200BDD8C5 /* PBXTargetDependency */,
+			);
+			name = QuakesAppUITests;
+			productName = QuakesAppUITests;
+			productReference = 7D566E6B240179E200BDD8C5 /* QuakesAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D566E3F240179E100BDD8C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Vasileios Gkreen";
+				TargetAttributes = {
+					7D566E46240179E100BDD8C5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					7D566E5F240179E200BDD8C5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7D566E46240179E100BDD8C5;
+					};
+					7D566E6A240179E200BDD8C5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 7D566E46240179E100BDD8C5;
+					};
+				};
+			};
+			buildConfigurationList = 7D566E42240179E100BDD8C5 /* Build configuration list for PBXProject "QuakesApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D566E3E240179E100BDD8C5;
+			productRefGroup = 7D566E48240179E100BDD8C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D566E46240179E100BDD8C5 /* QuakesApp */,
+				7D566E5F240179E200BDD8C5 /* QuakesAppTests */,
+				7D566E6A240179E200BDD8C5 /* QuakesAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D566E45240179E100BDD8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D566E5A240179E200BDD8C5 /* LaunchScreen.storyboard in Resources */,
+				7D566E57240179E200BDD8C5 /* Preview Assets.xcassets in Resources */,
+				7D566E54240179E200BDD8C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D566E5E240179E200BDD8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D566E69240179E200BDD8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D566E43240179E100BDD8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D566E4B240179E100BDD8C5 /* AppDelegate.swift in Sources */,
+				7D566E50240179E100BDD8C5 /* QuakesApp.xcdatamodeld in Sources */,
+				7D85FB19240189E500DA1B28 /* QuakeDetails.swift in Sources */,
+				7D566E52240179E100BDD8C5 /* ContentView.swift in Sources */,
+				7D4E04AB24017B42009FF353 /* NetworkingManager.swift in Sources */,
+				7D566E4D240179E100BDD8C5 /* SceneDelegate.swift in Sources */,
+				7D4E04B224017F3D009FF353 /* ListRow.swift in Sources */,
+				7D4E04AE24017BE6009FF353 /* Quakes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D566E5C240179E200BDD8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D566E65240179E200BDD8C5 /* QuakesAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D566E67240179E200BDD8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D566E70240179E200BDD8C5 /* QuakesAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D566E62240179E200BDD8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D566E46240179E100BDD8C5 /* QuakesApp */;
+			targetProxy = 7D566E61240179E200BDD8C5 /* PBXContainerItemProxy */;
+		};
+		7D566E6D240179E200BDD8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D566E46240179E100BDD8C5 /* QuakesApp */;
+			targetProxy = 7D566E6C240179E200BDD8C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D566E58240179E200BDD8C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D566E59240179E200BDD8C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D566E72240179E200BDD8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D566E73240179E200BDD8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D566E75240179E200BDD8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuakesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4XHC2A472T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = QuakesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.grenos.QuakesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D566E76240179E200BDD8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuakesApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4XHC2A472T;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = QuakesApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.grenos.QuakesApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D566E78240179E200BDD8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XHC2A472T;
+				INFOPLIST_FILE = QuakesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.grenos.QuakesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuakesApp.app/QuakesApp";
+			};
+			name = Debug;
+		};
+		7D566E79240179E200BDD8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XHC2A472T;
+				INFOPLIST_FILE = QuakesAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.grenos.QuakesAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuakesApp.app/QuakesApp";
+			};
+			name = Release;
+		};
+		7D566E7B240179E200BDD8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XHC2A472T;
+				INFOPLIST_FILE = QuakesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.grenos.QuakesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuakesApp;
+			};
+			name = Debug;
+		};
+		7D566E7C240179E200BDD8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4XHC2A472T;
+				INFOPLIST_FILE = QuakesAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.grenos.QuakesAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuakesApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D566E42240179E100BDD8C5 /* Build configuration list for PBXProject "QuakesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D566E72240179E200BDD8C5 /* Debug */,
+				7D566E73240179E200BDD8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D566E74240179E200BDD8C5 /* Build configuration list for PBXNativeTarget "QuakesApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D566E75240179E200BDD8C5 /* Debug */,
+				7D566E76240179E200BDD8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D566E77240179E200BDD8C5 /* Build configuration list for PBXNativeTarget "QuakesAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D566E78240179E200BDD8C5 /* Debug */,
+				7D566E79240179E200BDD8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D566E7A240179E200BDD8C5 /* Build configuration list for PBXNativeTarget "QuakesAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D566E7B240179E200BDD8C5 /* Debug */,
+				7D566E7C240179E200BDD8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D566E4E240179E100BDD8C5 /* QuakesApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D566E4F240179E100BDD8C5 /* QuakesApp.xcdatamodel */,
+			);
+			currentVersion = 7D566E4F240179E100BDD8C5 /* QuakesApp.xcdatamodel */;
+			path = QuakesApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7D566E3F240179E100BDD8C5 /* Project object */;
+}
